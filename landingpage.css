@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #004d1a; /* Dark Green */
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.logo {
+    display: flex;         
+    align-items: center;  
+}
+
+.logo h1 {
+    margin: 0;            
+    font-size: 34px;      
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e6ffe6; /* Light Green */
+    padding: 200px 0;
+    text-align: center;
+}
+
+.hero p {
+    color: #000000;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-left: 5px solid #004d1a;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    align-items: center;
+}
+
+
+.hero-buttons .btn {
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #004d1a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #006622;
+}
+
+.btn-secondary {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+}
+
+.btn-gold {
+    background-color: #ffd700;
+    color: #004d1a;
+}
+
+.btn-gold:hover {
+    background-color: #e6c200;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d1a;
+}
+
+/* Announcements */
+.announcement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-left: 5px solid #004d1a;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #004d1a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+/* Checkups */
+.checkup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.checkup-item {
+    background-color: #f0fff0; /* Very light green */
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.checkup-item h4 {
+    color: #004d1a;
+    margin-bottom: 8px;
+}
+
+.checkup-item p {
+    font-size: 0.95rem;
+}
+
+/* Login Buttons Section */
+.login-buttons .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #004d1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .announcement-cards, .checkup-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Add a hover effect to all buttons for that high-tech feel */
+.btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 0 15px rgba(0, 77, 26, 0.4);
+}

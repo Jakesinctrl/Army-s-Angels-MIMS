@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MIMS Student Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div>
+        <h1>MIMS</h1>
+        <p>Student Portal</p>
+      </div>
+    </div>
+
+    <p class="welcome">Welcome, Student</p>
+    <div class="divider"></div>
+
+    <nav>
+      <a class="nav-item active" href="#dashboard">Dashboard</a>
+      <a class="nav-item" href="#appointments">My Appointments</a>
+      <a class="nav-item" href="#request">Request Appointment</a>
+      <a class="nav-item" href="#announcements">Announcements</a>
+      <a class="nav-item" href="#feedback">Feedback</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- DASHBOARD -->
+    <section class="page" id="dashboard">
+      <div class="page-title">
+        <h1>Student Dashboard</h1>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Upcoming Appointments</h3>
+          <p>1</p>
+        </div>
+        <div class="card">
+          <h3>Pending Requests</h3>
+          <p>2</p>
+        </div>
+        <div class="card">
+          <h3>Clinic Announcements</h3>
+          <p>4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY APPOINTMENTS -->
+    <section class="page" id="appointments">
+      <div class="page-title">
+        <h1>My Appointments</h1>
+      </div>
+
+      <div class="panel">
+        <table class="table">
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Purpose</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>Jan 15, 2026</td>
+            <td>10:00 AM</td>
+            <td>Dental Checkup</td>
+            <td>Approved</td>
+          </tr>
+          <tr>
+            <td>Jan 20, 2026</td>
+            <td>2:00 PM</td>
+            <td>BMI Checkup</td>
+            <td>Pending</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- REQUEST APPOINTMENT -->
+    <section class="page" id="request">
+      <div class="page-title">
+        <h1>Request Appointment</h1>
+      </div>
+
+      <div class="panel">
+        <form class="form">
+          <label>Purpose</label>
+          <select>
+            <option>General Checkup</option>
+            <option>Dental Checkup</option>
+            <option>BMI Assessment</option>
+            <option>Other</option>
+          </select>
+
+          <label>Preferred Date</label>
+          <input type="date">
+
+          <label>Preferred Time</label>
+          <input type="time">
+
+          <label>Additional Notes</label>
+          <textarea placeholder="Optional message..."></textarea>
+
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section class="page" id="announcements">
+      <div class="page-title">
+        <h1>Clinic Announcements</h1>
+      </div>
+
+      <div class="panel announcements">
+        <div class="announcement">
+          <h3>Free Dental Checkup</h3>
+          <p>January 18, 2026 · 9:00 AM – 12:00 PM</p>
+        </div>
+
+        <div class="announcement">
+          <h3>Health Seminar</h3>
+          <p>January 22, 2026 · School Auditorium</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="page" id="feedback">
+      <div class="page-title">
+        <h1>Send Feedback</h1>
+      </div>
+
+      <div class="panel">
+        <form class="form">
+          <label>Your Message</label>
+          <textarea placeholder="Write your feedback here..."></textarea>
+          <button type="submit">Send Feedback</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

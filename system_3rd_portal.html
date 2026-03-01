@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMS Dashboard</title>
+    <link rel="stylesheet" href="system_3rd_portal.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="brand">
+            <div class="logo">M</div>
+            <div>
+                <h1>MIMS System</h1>
+                <p>Medical Information</p>
+            </div>
+        </div>
+
+        <p class="welcome">Welcome, Admin</p>
+        <div class="divider"></div>
+
+        <nav>
+            <a class="nav-item active" href="#dashboard">Dashboard</a>
+            <a class="nav-item" href="#schedule">Doctor Schedule</a>
+            <a class="nav-item" href="#patients">Patients</a>
+            <a class="nav-item" href="#appointments">Appointments</a>
+            <a class="nav-item" href="#records">Medical Records</a>
+            <a class="nav-item" href="#forms">Form Templates</a>
+            <a class="nav-item" href="#checkups">Checkup Types</a>
+            <a class="nav-item" href="#waiting">Waiting List</a>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- DASHBOARD -->
+        <section class="page" id="dashboard">
+            <div class="page-title">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Patients</h3>
+                    <p>128</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Appointments</h3>
+                    <p>42</p>
+                </div>
+                <div class="card">
+                    <h3>Doctors</h3>
+                    <p>16</p>
+                </div>
+                <div class="card">
+                    <h3>Forms</h3>
+                    <p>7</p>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Recent Appointments</h2>
+                <table class="table">
+                    <tr>
+                        <th>Patient</th>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Jan 10, 2025</td>
+                        <td>Dr. Cruz</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Santos</td>
+                        <td>Jan 9, 2025</td>
+                        <td>Dr. Reyes</td>
+                        <td>Completed</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- DOCTOR SCHEDULE -->
+        <section class="page" id="schedule">
+            <div class="page-title"><h1>Doctor Schedule</h1></div>
+            <div class="panel"><p class="empty">No schedules available.</p></div>
+        </section>
+
+        <!-- PATIENTS -->
+        <section class="page" id="patients">
+            <div class="page-title"><h1>Patients</h1></div>
+            <div class="panel"><p class="empty">No patient records.</p></div>
+        </section>
+
+        <!-- APPOINTMENTS -->
+        <section class="page" id="appointments">
+            <div class="page-title"><h1>Appointments</h1></div>
+            <div class="panel"><p class="empty">No appointments found.</p></div>
+        </section>
+
+        <!-- MEDICAL RECORDS -->
+        <section class="page" id="records">
+            <div class="page-title"><h1>Medical Records</h1></div>
+            <div class="panel"><p class="empty">No medical records yet.</p></div>
+        </section>
+
+        <!-- FORM TEMPLATES -->
+        <section class="page" id="forms">
+            <div class="page-title"><h1>Form Templates</h1></div>
+            <div class="panel"><p class="empty">No form templates added.</p></div>
+        </section>
+
+        <!-- CHECKUP TYPES -->
+        <section class="page" id="checkups">
+            <div class="page-title"><h1>Checkup Types</h1></div>
+            <div class="panel"><p class="empty">No checkup types yet.</p></div>
+        </section>
+
+        <!-- WAITING LIST -->
+        <section class="page" id="waiting">
+            <div class="page-title"><h1>Waiting List</h1></div>
+            <div class="panel"><p class="empty">No patients in waiting list.</p></div>
+        </section>
+
+    </div><!-- END MAIN -->
+</div><!-- END CONTAINER -->
+
+</body>
+</html>
